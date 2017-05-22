@@ -1,17 +1,17 @@
 
-import React, { Component } from "react";
-import PropTypes from 'prop-types';
-import mapboxgl from "mapbox-gl";
-import turf from "@turf/turf";
+import React, { Component } from "react"
+import PropTypes from 'prop-types'
+import mapboxgl from "mapbox-gl"
+import turf from "@turf/turf"
 //import fred from "@turf/bbox";
 //import bboxPolygon from "@turf/bbox-polygon";
 
 
-export default class MapboxComponent extends Component {
+export default class Mapbox extends Component {
 	
 	constructor(props) {
-		super(props);
-		this.map={};
+		super(props)
+		this.map={}
 	        
 	}
 
@@ -72,7 +72,7 @@ export default class MapboxComponent extends Component {
 	}
 }
 
-MapboxComponent.propTypes = {
+Mapbox.propTypes = {
 	handleMapBoundsChanged: PropTypes.func.isRequired
 }
 

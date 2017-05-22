@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './Map.css';
 
-import MapboxComponent from "./components/mapboxcomponent.js";
-import TextComponent from "./components/textcomponent.js";
+import Map from "./components/map.js";
+import TextPanel from "./components/textpanel.js";
 
 class App extends Component {
 
@@ -33,13 +33,13 @@ class App extends Component {
               <div className="col-md-12">
               
               <div id="map">
-                <MapboxComponent 
-                    handleMapBoundsChanged={this.handleMapComponentBoundsChanged.bind(this)}
+                <Map 
+                    mapBoundsChangeHandler={this.handleMapComponentBoundsChanged.bind(this)}
                 />
               </div>
 
-              <TextComponent
-                 isMelbourneShowing={this.state.isViewingMelbourne}
+              <TextPanel
+                 isMelbourneShowing={this.state.isViewingMelbourne} 
               />
               </div>
             </div>
