@@ -2,6 +2,7 @@
 import React, { Component } from "react"
 import PropTypes from 'prop-types'
 import mapboxgl from "mapbox-gl"
+import "mapbox-gl/dist/mapbox-gl.css"
 import turf from "@turf/turf"
 //import fred from "@turf/bbox";
 //import bboxPolygon from "@turf/bbox-polygon";
